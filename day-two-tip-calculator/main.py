@@ -13,4 +13,4 @@ people_number = int(input("How many people to split the bill? "))
 # number of people, and finally the round function is used to round it to two decimal places
 split = round(((bill_amount + (tip/100) * bill_amount) / people_number), 2)
 
-print(f'Each person should pay: ${split}')
+print(f'Each person should pay: ${"{:.2f}".format(split)}')
