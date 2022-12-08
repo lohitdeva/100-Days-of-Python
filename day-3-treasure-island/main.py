@@ -1,3 +1,10 @@
+# This script simulates a text-based adventure game where the user
+# has to navigate through different perilous situations to find the hidden
+# treasure at the end
+#
+# Created by: Lohit Deva
+# 08/12/2022
+
 print('''\n\n*******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
