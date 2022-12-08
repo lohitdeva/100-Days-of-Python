@@ -19,3 +19,11 @@ The script accepts the name of the city you grew up in, the name of your pet and
 This project will deal with the concepts of data types, operations, type conversion and f-strings.
 
 The script accepts a total bill amount, number of people the bill must be split among, and a tip percentage. It then outputs the share that each person has to pay.
+
+## Day Three
+
+### Treasure Island
+
+This project will deal with the concepts of conditional statements, logical operators, code blocks, and scope of a variable (local and global).
+
+In this project, users play a text-based game called 'Treasure Island' where the objective is to navigate based on the instructions that appear on screen and find a hidden treasure.
