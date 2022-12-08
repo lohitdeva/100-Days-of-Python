@@ -20,42 +20,49 @@ print(options[user_choice])
 print("\nComputer chose:\n")
 print(options[computer_choice])
 
-# In case of a tie
-if user_choice == computer_choice:
-	print("\nIt's a tie!\n")
+# Checking if user picked a valid option
+if user_choice >= 0 and user_choice <= 2:
+	
+	# In case of a tie
+	if user_choice == computer_choice:
+		print("\nIt's a tie!\n")
 
-# If there is no tie
+	# If there is no tie
+	else:
+
+		# If the user has picked rock
+		if user_choice == 0:
+
+			# Paper beats rock, user loses
+			if computer_choice == 1:
+				print("\nYou lose!\n")
+
+			# Rock beats scissors, user wins
+			else:
+				print("\nYou win!\n")
+
+		# If the user has picked paper
+		elif user_choice == 1:
+
+			# Paper beats rock, user wins
+			if computer_choice == 0:
+				print("\nYou win!\n")
+
+			# Scissors beat paper, user loses
+			else:
+				print("\nYou lose!\n")
+
+		# If the user has picked scissors
+		else:		
+
+			# Rock beats scissors, user loses
+			if computer_choice == 0:
+				print("\nYou lose!\n")
+
+			# Scissors beat paper, user wins
+			else:
+				print("\nYou win!")
+
+# User picked an invalid option
 else:
-	
-	# If the user has picked rock
-	if user_choice == 0:
-		
-		# Paper beats rock, user loses
-		if computer_choice == 1:
-			print("\nYou lose!\n")
-		
-		# Rock beats scissors, user wins
-		else:
-			print("\nYou win!\n")
-	
-	# If the user has picked paper
-	elif user_choice == 1:
-
-		# Paper beats rock, user wins
-		if computer_choice == 0:
-			print("\nYou win!\n")
-		
-		# Scissors beat paper, user loses
-		else:
-			print("\nYou lose!\n")
-
-	# If the user has picked scissors
-	else:		
-
-		# Rock beats scissors, user loses
-		if computer_choice == 0:
-			print("\nYou lose!\n")
-		
-		# Scissors beat paper, user wins
-		else:
-			print("\nYou win!")
+	print("\nYou picked an invalid option. You lose!\n")
