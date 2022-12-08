@@ -27,3 +27,11 @@ The script accepts a total bill amount, number of people the bill must be split 
 This project will deal with the concepts of conditional statements, logical operators, code blocks, and scope of a variable (local and global).
 
 In this project, users play a text-based game called 'Treasure Island' where the objective is to navigate based on the instructions that appear on screen and find a hidden treasure.
+
+## Day Four
+
+### Rock, Paper, Scissors 
+
+This project will deal with the concepts of randomisation and lists.
+
+The script will replicate the classic kids game: "Rock, Paper, Scissors".
