@@ -14,15 +14,15 @@ options = [rpsart.rock, rpsart.paper, rpsart.scissors]
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 for Scissors\n"))
 computer_choice = random.randint(0,2)
 
-print("\nYou chose:\n")
-print(options[user_choice])
-
-print("\nComputer chose:\n")
-print(options[computer_choice])
-
 # Checking if user picked a valid option
 if user_choice >= 0 and user_choice <= 2:
 	
+	print("\nYou chose:\n")
+	print(options[user_choice])
+
+	print("\nComputer chose:\n")
+	print(options[computer_choice])
+
 	# In case of a tie
 	if user_choice == computer_choice:
 		print("\nIt's a tie!\n")
