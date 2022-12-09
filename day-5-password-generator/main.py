@@ -4,3 +4,5 @@
 #
 # Created by: Lohit Deva
 # 09/12/2022
+
+print("Welcome to the PyPassword Generator")
