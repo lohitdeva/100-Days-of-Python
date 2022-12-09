@@ -24,13 +24,13 @@ no_symbols = int(input("How many symbols do you want in the password?\n"))
 # Since lists are returned, we append them directly with each other to reduce creating extra variables.
 raw_chars = random.choices(letters, k=no_letters) + random.choices(numbers, k=no_numbers) + random.choices(symbols, k=no_symbols)
 
-# random.shuffle() shuffles the list in place. It does not create a new list and thus returns None
-# Hence we use random.sample() instead
-shuffled_chars = random.sample(raw_chars, len(raw_chars))
+# random.shuffle() shuffles the list in place, thereby eliminating the need to create a new list.
+# To create a new list, we can use random.sample()
+random.shuffle(raw_chars)
 
 # Here, a for loop is added to concatenate all the characters in the list into a string
 password = ''
-for char in shuffled_chars:
+for char in raw_chars:
 	password += char
 
 print(f"\nYour new password is {password}\n")	
