@@ -43,3 +43,11 @@ The script will recreate the classic kids game rock, paper, scissors.
 This project will deal with the concepts of for loops, range, and code blocks.
 
 The script will ask users how many letters, symbols and numbers they want in their password and then generate a random password tailored to their specifications.
+
+## Day Six
+
+### Escape the Maze
+
+This project will deal with the concepts of while loops and functions.
+
+The aim of this project is to create a robot that can escape out of any randomly generated maze.
