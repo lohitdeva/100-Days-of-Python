@@ -34,4 +34,12 @@ In this project, users play a text-based game called 'Treasure Island' where the
 
 This project will deal with the concepts of randomisation and lists.
 
-The script will replicate the classic kids game: "Rock, Paper, Scissors".
+The script will recreate the classic kids game rock, paper, scissors.
+
+## Day Five
+
+### Password Generator
+
+This project will deal with the concepts of for loops, range, and code blocks.
+
+The script will ask users how many letters, symbols and numbers they want in their password and then generate a random password tailored to their specifications.
