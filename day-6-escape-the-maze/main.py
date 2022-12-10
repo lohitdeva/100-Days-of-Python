@@ -10,6 +10,13 @@
 
 # NOTE: This code will not execute on its own and can only be run at the URL specified above
 
+# This loop is to make the robot continue in a straight path until it encounters a wall
+while front_is_clear():
+	move()
+
+# After the robot hits a wall, it turns left so that it can continue to follow the right side of the maze
+turn_left()
+
 # This function turns the robot right as there no pre-defined function to achieve this
 def turn_right():
 	for i in range(3):
@@ -18,20 +25,15 @@ def turn_right():
 # at_goal() evaluates to true once the robot reaches the end of the maze
 while not at_goal():
 
-	# If both front and right is clear, the robot should move straight ahead. Otherwise it gets stuck in
-	# an infinite loop of turning right
-	if right_is_clear() and front_is_clear():
-		move()
-	
-	# Here, the robot takes the opportunity to turn right if it see the opportunity
-	elif right_is_clear():
+	# Here the robot takes the opportunity to turn right if possible.
+	if right_is_clear():
 		turn_right()
 		move()
 	
-	# Here the robot continues to move along the right edge of the maze
+	# If it cannot go right, the robot will continue to move straight.
 	elif front_is_clear():
 		move()
-	
-	# Here the robot turns left if it is unable to proceed straight or turn right
+
+	# If the robot cannot go straight or left, it will turn left.
 	else:
 		turn_left()
