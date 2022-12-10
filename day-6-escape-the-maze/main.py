@@ -18,16 +18,20 @@ def turn_right():
 # at_goal() evaluates to true once the robot reaches the end of the maze
 while not at_goal():
 
-	# Here, the goal is to make a right turn whenever possible
-	if right_is_clear():
+	# If both front and right is clear, the robot should move straight ahead. Otherwise it gets stuck in
+	# an infinite loop of turning right
+	if right_is_clear() and front_is_clear():
+		move()
+	
+	# Here, the robot takes the opportunity to turn right if it see the opportunity
+	elif right_is_clear():
 		turn_right()
 		move()
-
-	else:
-		# This is to move forward while following the right edge of the map
-		if front_is_clear():
-			move()
 	
-		# This is if it not possible to either move forward or to turn right
-		else:
-			turn_left()
+	# Here the robot continues to move along the right edge of the maze
+	elif front_is_clear():
+		move()
+	
+	# Here the robot turns left if it is unable to proceed straight or turn right
+	else:
+		turn_left()
