@@ -50,4 +50,6 @@ The script will ask users how many letters, symbols and numbers they want in the
 
 This project will deal with the concepts of while loops and functions.
 
-The aim of this project is to create a robot that can escape out of any randomly generated maze.
+In this project, we will make use of the website [Reeborg's World](https://reeborg.ca/index_en.html) which allows users to learn Python concepts by moving around a robot called Reeborg.
+
+This project will specifically deal with the [Lost in a Maze](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json) challenge where you have to help Reeborg escape the maze. Reeborg's position is generated randomly each time the script is run, making the challenge quite interesting.
