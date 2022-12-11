@@ -18,24 +18,32 @@ def encodeString(raw, shift):
 		if not char.isalnum() :
 			result += char
 			continue
+
+		# This checks if the character is an alphabet and thus uses the alphabets string as reference.
+		elif char.isalpha():
 		
-		# Here, position after shifting is calculated. The modulo operator is used to ensure that position oof shifted
-		# character stays between 0 - 25 (the available indices in the alphabets string).
-		# Since we are shifting the position of the character down the alphabet, we add shift.
-		position = (alphabets.index(char.lower()) + shift) % len(alphabets)
+			# Here, position after shifting is calculated. The modulo operator is used to ensure that position oof shifted
+			# character stays between 0 - 25 (the available indices in the alphabets string).
+			# Since we are shifting the position of the character down the alphabet, we add shift.
+			position = (alphabets.index(char.lower()) + shift) % len(alphabets)
 		
-		# This checks if the character in the original string is upper case and maintains the case.
-		if char.isupper():
-			result += alphabets[position].upper()
+			# This checks if the character in the original string is upper case and maintains the case.
+			if char.isupper():
+				result += alphabets[position].upper()
 		
-		# If it is not uppercase, then the character is simply appended without modification.
-		else:
-			result += alphabets[position]
-	
+			# If it is not uppercase, then the character is simply appended without modification.
+			else:
+				result += alphabets[position]
+
+		# This executes if the character is a number and uses the numbers string as reference.
+		else:		
+			
+			result + = numbers[(numbers.index(char) + shift) % len(numbers)]
+
 	print(f"\nThe encoded string is: {result}\n")	
 
-# This function works similar to the encodeString() function, except that it decodes a given string that was encoded using 
-# the Caesar cipher.
+# This function works similar to the encodeString() function, except that it moves the characters up the alphabet by the 
+# specified number of shifts and thus can decode a cipher created by the encodeString() function if the same shift is used.
 def decodeString(raw, shift):
 	result = ''
 	
@@ -45,19 +53,27 @@ def decodeString(raw, shift):
 			result += char
 			continue
 
-		# Here we shift the position of the character up the alphabet and thus subtract shift.
-		position = (alphabets.index(char.lower()) - shift) % len(alphabets)
+		# Here we subtract shift since we are moving up the alphabet. 
+		elif char.isalpha():
 		
-		if char.isupper():
-			result += alphabets[position].upper()
+			position = (alphabets.index(char.lower()) - shift) % len(alphabets)
 		
-		else:
-			result += alphabets[position]
-	
-	print(f"\nThe decoded string is: {result}\n")	
+			if char.isupper():
+				result += alphabets[position].upper()
+		
+			else:
+				result += alphabets[position]
+
+		else:		
+			
+			result + = numbers[(numbers.index(char) - shift) % len(numbers)]
+
+	print(f"\nThe encoded string is: {result}\n")	
 
 # This string contains the letters of the alphabet to use as a reference when shifting characters while encoding/decoding.
-alphabets = 'abcdefghijklmnopqrstuvwxyz0123456789'
+alphabets = 'abcdefghijklmnopqrstuvwxyz'
+# This string contains the digits from 0-9 and will be used while encoding/decoding numbers.
+numbers = '0123456789'
 
 print('''
 ░█▀▀░█▀█░█▀▀░█▀▀░█▀█░█▀▄░░░█▀▀░▀█▀░█▀█░█░█░█▀▀░█▀▄
