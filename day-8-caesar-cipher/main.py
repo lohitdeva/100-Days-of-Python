@@ -38,7 +38,7 @@ def encodeString(raw, shift):
 		# This executes if the character is a number and uses the numbers string as reference.
 		else:		
 			
-			result + = numbers[(numbers.index(char) + shift) % len(numbers)]
+			result += numbers[(numbers.index(char) + shift) % len(numbers)]
 
 	print(f"\nThe encoded string is: {result}\n")	
 
@@ -66,7 +66,7 @@ def decodeString(raw, shift):
 
 		else:		
 			
-			result + = numbers[(numbers.index(char) - shift) % len(numbers)]
+			result += numbers[(numbers.index(char) - shift) % len(numbers)]
 
 	print(f"\nThe encoded string is: {result}\n")	
 
