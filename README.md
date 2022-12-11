@@ -61,3 +61,15 @@ This project will specifically deal with the [Lost in a Maze](https://reeborg.ca
 This project further strengthens the concepts covered in the previous and deals with breaking down a big problem statements into smaller problems that can be tackled easily. This project also introduces small checks to the UI such as validation messages and ASCII art to help the user understand the game better and make the experience more enjoyable.
 
 In this project, we will recreate the classic game - 'Hangman'. The objective of this game is to guess a secret word, one letter at a time. Every wrong guess loses the user a life and the user must guess the word before they run out of lives.
+
+## Day Eight
+
+### Caeser Cipher
+
+This project deals with the concept of passing arguments to functions.
+
+In this project, we will write a Python script that encodes and decodes strings using the Caesar Cipher.
+
+The Caeser Cipher is an ancient encryption method where plaintext letters were replaced with another alphabet shifted some number down the alphabet. The number of shifts is previously agreed upon between the sender and recipient. For example, the world 'Hello' with a shift of 3 becomes 'Khoor'.
+
+The script goes one step further to also shift the digits of a number in the same cyclic manner that happens with the alphabet.
