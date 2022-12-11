@@ -53,3 +53,11 @@ This project will deal with the concepts of while loops and functions.
 In this project, we will make use of the website [Reeborg's World](https://reeborg.ca/index_en.html) which allows users to learn Python concepts by moving around a robot called Reeborg.
 
 This project will specifically deal with the [Lost in a Maze](https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json) challenge where you have to help Reeborg escape the maze. Reeborg's position is generated randomly each time the script is run, making the challenge quite interesting.
+
+## Day Seven
+
+### Hangman
+
+This project further strengthens the concepts covered in the previous and deals with breaking down a big problem statements into smaller problems that can be tackled easily. This project also introduces small checks to the UI such as validation messages and ASCII art to help the user understand the game better and make the experience more enjoyable.
+
+In this project, we will recreate the classic game - 'Hangman'. The objective of this game is to guess a secret word, one letter at a time. Every wrong guess loses the user a life and the user must guess the word before they run out of lives.
