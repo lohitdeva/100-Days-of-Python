@@ -13,7 +13,7 @@ def caesar(raw, shift, direction):
 
 	# Changing the shift to negative in case of decode as the shifting needs to move up the alphabet (or numbers) instead
 	# of down
-	if direction == 'd':
+	if direction == 'decode':
 		shift = -shift
 
 	for char in raw:
@@ -38,8 +38,7 @@ def caesar(raw, shift, direction):
 			else:
 				result += numbers[(numbers.index(char) + shift) % len(numbers)]
 	
-	# Here we use a ternary operation to display the appropriate text based on the conversion that was carried out.
-	print(f'Your {"encoded" if direction == "e" else "decoded"} text is: {result}')
+	print(f'Your {choice}d text is: {result}')
 
 # This string contains the letters of the alphabet to use as a reference when shifting characters while encoding/decoding.
 alphabets = 'abcdefghijklmnopqrstuvwxyz'
@@ -70,13 +69,8 @@ while loop_continue == 'y':
 	else:
 		raw_string = input("\nEnter the string:\n")
 		shift = int(input("Enter the number of characters to be shifted by:\n"))
-
-		if choice == 'encode':
-			caesar(raw_string, shift, 'e')
-
-		else:
-			caesar(raw_string, shift, 'd')
+		caesar(raw_string, shift, choice)
 
 	# Here the condition for the while loop is updated. If the user enters 'y' (or 'Y'), the initial condition stays true
 	# and the loop continues for another iteration. However if any different input is entered, the loop is immediately terminated.
-	loop_continue = input("Do you want to continue using the Caesar cipher generator? Press 'y' or 'Y' to continue, press anything else to exit\n").strip().lower()
+	loop_continue = input("\nDo you want to continue using the Caesar cipher generator? Press 'y' or 'Y' to continue, press anything else to exit\n").strip().lower()
