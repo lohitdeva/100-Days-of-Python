@@ -73,3 +73,11 @@ In this project, we will write a Python script that encodes and decodes strings 
 The Caeser Cipher is an ancient encryption method where plaintext letters were replaced with another alphabet shifted some number down the alphabet. The number of shifts is previously agreed upon between the sender and recipient. For example, the world 'Hello' with a shift of 3 becomes 'Khoor'.
 
 The script goes one step further to also shift the digits of a number in the same cyclic manner that happens with the alphabet.
+
+## Day Nine
+
+### Silent Auction
+
+This project deals with the concept of Python dictionaries and nesting.
+
+In this project we will build a silent auction program where multiple users can bid silently, i.e, without revealing their bid amount and the highest bidder is picked as the winner.
