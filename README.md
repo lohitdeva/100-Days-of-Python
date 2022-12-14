@@ -30,7 +30,7 @@ In this project, users play a text-based game called 'Treasure Island' where the
 
 ## Day Four
 
-### Rock, Paper, Scissors 
+### Rock, Paper, Scissors
 
 This project will deal with the concepts of randomisation and lists.
 
@@ -81,3 +81,12 @@ The script goes one step further to also shift the digits of a number in the sam
 This project deals with the concept of Python dictionaries and nesting.
 
 In this project we will build a silent auction program where multiple users can bid silently, i.e, without revealing their bid amount and the highest bidder is picked as the winner.
+
+## Day Ten
+
+### Calculator
+
+This project deals with the concept of creating functions that return outputs.
+
+This project is a text-based calculator app where the users are first asked to enter a number, pick an operation, and enter the other number. It then shows the user the computation and asks
+if the user wants to continue calculating using the same number, or move on to a different calculation.
