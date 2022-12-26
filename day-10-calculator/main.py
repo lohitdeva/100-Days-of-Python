@@ -1,3 +1,6 @@
+# This script accepts two numbers and an operator from the user and performs the desired arithmetic calculation.
+# The script also allows the user to continue a given calculation, or to start a new one.
+
 import os
 
 logo = """
@@ -18,9 +21,18 @@ logo = """
 """
 
 def compute(num1, num2, operator):
+    '''
+        This function accepts two numbers and an operator from the user and outputs the result of the 
+        desired arithmetic operation.
+    '''
+    # The eval keyword allows you to evaluate Python expressions from string based inputs
     return eval(f'{num1} {operator} {num2}')
 
 def pickOperator():
+    '''
+        This function displays the allowed set of operations to a user and asks the user to pick one and returns the selected operator.
+        If the user picks an invalid option, they are allowed to pick again until they make a valid choice.
+    '''
     operators = ['+', '-', '*', '/']
     operator = ''
     print('\n', *operators, sep='\n')
@@ -35,11 +47,14 @@ continue_condition = 'n'
 num1, num2, result = 0, 0, 0
 
 while continue_condition == 'n' or continue_condition == 'y':
+    
+    # This condition denotes the start of a new calculation
     if continue_condition == 'n':
         os.system('cls')
         print(logo)
         num1 = float(input("\nWhat's the first number?\n"))
 
+    # This condition denotes the continuation of a current calculation
     else:
         num1 = result
 
