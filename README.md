@@ -90,3 +90,11 @@ This project deals with the concept of creating functions that return outputs.
 
 This project is a text-based calculator app where the users are first asked to enter a number, pick an operation, and enter the other number. It then shows the user the computation and asks
 if the user wants to continue calculating using the same number, or move on to a different calculation.
+
+## Day Eleven
+
+### Blackjack
+
+This is a capstone project that will cover all the different topics dealt with so far.
+
+In this project, we will attempt to recreate the classic game of Blackjack.
