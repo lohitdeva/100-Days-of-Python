@@ -98,3 +98,13 @@ if the user wants to continue calculating using the same number, or move on to a
 This is a capstone project that will cover all the different topics dealt with so far.
 
 In this project, we will attempt to recreate the classic game of Blackjack.
+
+## Day Twelve
+
+### Number Guessing Game
+
+This project will deal with the concepts of global and local variable scope in python.
+
+In this project, we will create a number guessing game wherein the user has to guess a randomly generated number by the computer.
+Each time the user guesses a number, a prompt will show them if their guess is too high or too low.
+The game also comes with two difficulties, 'easy' and 'hard'. Easy mode gives the users 10 attempts to guess the right word whereas 'hard' difficulty gives the user only 5 attempts.
