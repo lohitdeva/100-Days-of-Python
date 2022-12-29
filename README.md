@@ -129,10 +129,18 @@ In this version of Higher Lower, we have the names of 50 different Instagram pro
 
 ### Coffee Machine
 
-This project will recreate a coffee machine.
+This project will recreate a coffee machine based on the following [requirements](Coffee%2BMachine%2BProgram%2BRequirements.pdf).
 
 The script first asks the user what kind of drink they want. Based on what the user selects, the script should first perform a check to see if there are enough resources available to perform the action.
 
 The next step is to ask user to insert coins, returning them their change if they add extra money or refunding the entire amount if they don't add enough.
 
 If everything goes correctly, the script finally serves the drink to the user.
+
+## Day Sixteen
+
+### Coffee Machine with OOP
+
+This project will recreate the coffee machine created on day 15 but using OOP (object oriented programming) principles.
+
+The files containing all the classes required by the main script were supplied as part of the course. The main script was constructed referring to this [documentation](Coffee%2BMachine%2BClasses%2BDocumentation.pdf)
