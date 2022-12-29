@@ -106,7 +106,9 @@ In this project, we will attempt to recreate the classic game of Blackjack.
 This project will deal with the concepts of global and local variable scope in python.
 
 In this project, we will create a number guessing game wherein the user has to guess a randomly generated number by the computer.
+
 Each time the user guesses a number, a prompt will show them if their guess is too high or too low.
+
 The game also comes with two difficulties, 'easy' and 'hard'. Easy mode gives the users 10 attempts to guess the right word whereas 'hard' difficulty gives the user only 5 attempts.
 
 ## Day Thirteen
@@ -122,3 +124,15 @@ No project for day 13. Day 13 only focused on different debugging principles.
 This project will recreate the game ['Higher Lower'](https://higherlowergame.com/).
 
 In this version of Higher Lower, we have the names of 50 different Instagram profiles among which the user will be shown 2 at random, and must guess which of the two have a higher follower count. In addition to the name of the Instagram celebrity (or profile), users are also shown information about the occupation and location of the celebrity to provide context.
+
+## Day Fifteen
+
+### Coffee Machine
+
+This project will recreate a coffee machine.
+
+The script first asks the user what kind of drink they want. Based on what the user selects, the script should first perform a check to see if there are enough resources available to perform the action.
+
+The next step is to ask user to insert coins, returning them their change if they add extra money or refunding the entire amount if they don't add enough.
+
+If everything goes correctly, the script finally serves the drink to the user.
