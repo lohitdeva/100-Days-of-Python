@@ -31,7 +31,8 @@ columns = 10
 canvas_width = ((dot_size + space_size) * rows) + (2 * space_size)
 canvas_height = ((dot_size + space_size) * columns) + space_size
 
-screen.screensize(canvas_width, canvas_height)
+#TODO: Revisit calculations
+screen.setup(width=canvas_width, height=canvas_height)
 screen.colormode(255)
 
 # Set start point of turtle as bottom left corner of screen
