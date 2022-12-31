@@ -28,15 +28,15 @@ rows = 10
 columns = 10
 
 # Dynamically calculate canvas size based on requirements
-canvas_width = ((dot_size + space_size) * rows) + (2 * space_size)
-canvas_height = ((dot_size + space_size) * columns) + space_size
-
-#TODO: Revisit calculations
-screen.setup(width=canvas_width, height=canvas_height)
+canvas_width = ((dot_size + space_size) * columns) + (3 * space_size)
+canvas_height = ((dot_size + space_size) * rows) + (3 * space_size)
+screen.setup(width=canvas_width + space_size,
+             height=canvas_height + space_size)
+screen.screensize(canvwidth=canvas_width, canvheight=canvas_height)
 screen.colormode(255)
 
 # Set start point of turtle as bottom left corner of screen
-origin_x = (canvas_width / 2) - dot_size
+origin_x = (canvas_width / 2) - (space_size + dot_size)
 origin_y = (canvas_height / 2) - (space_size + dot_size)
 
 turtle.up()
