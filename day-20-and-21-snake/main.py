@@ -23,7 +23,7 @@ game_is_on = True
 
 while game_is_on:
     s.update()
-    time.sleep(0.1)
+    time.sleep(0.07)
     snake.move()
 
     s.listen()

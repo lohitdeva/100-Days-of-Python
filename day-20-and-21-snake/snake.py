@@ -31,7 +31,7 @@ class Snake:
         snake_part = turtle.Turtle()
         snake_part.speed('fastest')
         snake_part.shape('square')
-        snake_part.fillcolor(205, 220, 57)
+        snake_part.color(205, 220, 57)
         snake_part.up()
         return snake_part
 
